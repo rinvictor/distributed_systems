@@ -1,0 +1,17 @@
+ver si puedo quitar el Loop: de func santa
+descubrir que es el * de la funcion de rellenar las estanterias
+Ver lo de note y lo dejar una nota, pensa algo difrente
+ver el wait.Unlock
+ver lo de wg.Add
+wg,Done del launchREindeers
+cuidado con la funcion reindeer, luis ahi no pone wg.Done()
+d,r, nbatallions... duplicado arriba y en el main
+
+
+
+Tenia un problema en el caso de que finalizaran antes los duendes que los renos
+Y es que me salía un deadlock dicendo que todas las gorutinas estaban dormidas
+El problema está en que me quedaría esperando a los renos que nunca llegarían
+la solución está en el wg.Add por las rutinas que espero
+creo que es bastante antinatural que sea el lider quien avise a los renos
+de que ya se ha terminado el problema

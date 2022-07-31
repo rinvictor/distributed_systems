@@ -1,0 +1,1 @@
+go run practica2.go
